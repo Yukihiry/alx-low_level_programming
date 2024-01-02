@@ -1,22 +1,20 @@
 #include "main.h"
 
 /**
- * puts2 - Prints every other character of a string, starting with the first character.
- * @str: Pointer to the string.
+ * main - Entry point
+ *
+ * Return: Always 0.
  */
-void puts2(char *str)
+int main(void)
 {
-    int i = 0;
+    char *str;
 
-    while (str[i] != '\0')
-    {
-        // Print characters at even indices (0, 2, 4, ...)
-        putchar(str[i]);
+    // Step 1: Define a string
+    str = "0123456789";
 
-        // Move to the next character (skip one character)
-        i += 2;
-    }
+    // Step 2: Call the puts2 function
+    puts2(str);
 
-    // Print a new line after printing every other character
-    putchar('\n');
+    // Step 3: Return 0
+    return (0);
 }
